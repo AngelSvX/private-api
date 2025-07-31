@@ -21,7 +21,7 @@ Frontend:
 
 ## Instalación y Configuración
 1. Clona el repositorio:
-- git clone url_del_repositorio
+- git clone https://github.com/AngelSvX/private-api.git
 2. instalación de dependencias:
 backend:
 - cd server
