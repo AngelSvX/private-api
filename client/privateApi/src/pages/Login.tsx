@@ -3,14 +3,12 @@ import { useLogin } from '../hooks/useLogin';
 
 function Login() {
 
-  const { setPassword, setUsername, password, username } = useLogin()
+  const { setPassword, setUsername, password, username, loginUser } = useLogin()
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    loginUser()
   }
-
-  console.log(password)
-  console.log(username)
 
   return (
     <div className="flex justify-center items-center w-full h-screen bg-black">
