@@ -15,7 +15,7 @@ export const getDataProController = async (req, res) => {
 export const getDataDesController = async (req, res) => {
   try {
     const response = showDesignerData();
-    res.status(200).json(response);
+    res.status(200).json({response});
   } catch (error) {
     console.log("Ocurrió un error en getDataProController");
     res.status(500).json(error);
@@ -25,7 +25,7 @@ export const getDataDesController = async (req, res) => {
 export const getDataAnController = async (req, res) => {
   try {
     const response = showAnalisticData();
-    res.status(200).json(response);
+    res.status(200).json({response});
   } catch (error) {
     console.log("Ocurrió un error en getDataProController");
     res.status(500).json(error);
