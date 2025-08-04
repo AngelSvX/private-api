@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState, type ReactNode } from "react";
+import React, { createContext, useState, type ReactNode } from "react";
 import type { LoginContextType } from '../types/ContextType/LoginContextType';
 import axios from "axios";
 import { jwtDecode } from 'jwt-decode'
